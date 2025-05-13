@@ -42,25 +42,7 @@ export default async function queryDB(externalFunction) {
         return;
       }
     }
-    // if (fs.existsSync("db.json")) {
-    //   await fs.readFile("db.json", function (err, data) {
-    //     if (err) {
-    //       console.log("reading file  error", err);
-    //       return;
-    //     }
-    //     info = JSON.parse(data.toString());
-    //     console.log(JSON.parse(data.toString()));
-    //     if (externalFunction && !err) {
-    //       externalFunction(info);
-    //       return;
-    //     }
-    //   });
-    // } else {
-    //   if (externalFunction) {
-    //     externalFunction(info);
-    //     return;
-    //   }
-    // }
+   
   } catch (error) {
     console.log("some thing went wrong", err);
   }
